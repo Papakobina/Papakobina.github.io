@@ -1,0 +1,42 @@
+.main{
+    background-color: rgb(143, 87, 143);
+    margin-top: 0em;
+    position: relative;
+    height: 35em;
+}
+.content{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+.text{
+    color: white;
+    position: absolute;
+    top: 45%;
+    left: 40%;
+    text-shadow: 0 15px 25px rgb(0, 0, 0,0.5);
+
+}
+.text2{
+    position: absolute;
+    color: white;
+    margin-left: 4.9em;
+    top: 45%;
+    left: 30%;
+    text-shadow: 0 15px 25px rgb(0, 0, 0,0.5);
+    animation: bounce 0.5s infinite;
+
+}
+@keyframes bounce {
+    0%{
+      transform: translateY(0px);  
+    }
+    50%{
+        transform: translateY(-30px);
+        color: orange;  
+      }
+    100%{
+        transform: translateY(0px);
+        color: rgb(125, 52, 52);  
+      }
+}

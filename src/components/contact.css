@@ -1,0 +1,53 @@
+.contacts{
+    background-color: rgb(143, 87, 143);
+    height: 30em;
+}
+
+input, .text{
+    display: flex;
+    left: 45%;
+    position: relative;
+}
+
+.name, .email{
+    margin-top: 1em;
+    border-radius: 10%;
+    border: none;
+    margin-bottom: 1em;
+    height: 4em;
+    width: 14em;
+    border-color: rgb(74, 74, 118);
+}
+.text{
+    height: 10em;
+    width: 20em;
+    position: relative;
+    left: 42%;
+}
+.button{
+    margin-top: 1em;
+    border-radius: 10%;
+    background-color: bisque;
+    border: none;
+    position: relative;
+    left: 50%;
+    height: 4em;
+    width: 5em;
+    animation: bounces 0.5s infinite;
+
+}
+@keyframes bounces {
+    0%{
+      transform: translateY(0px);  
+    }
+    50%{
+        transform: translateY(-10px);
+      }
+    100%{
+        transform: translateY(0px);
+      }
+}
+.header{
+    text-align: center;
+    text-decoration: underline;
+}

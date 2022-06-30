@@ -1,0 +1,27 @@
+.mains{
+    background-color: bisque;
+    height: 35em;
+
+}
+.texts{
+    left: 43%;
+    position: absolute;
+    text-align: center;
+    display: flex;
+    margin-top: 1em;
+    text-decoration: underline;
+}
+.texts2{
+    text-align: center;
+    top: 120%;
+    left: 5%;
+    position: absolute;
+    font-size: larger;
+
+}
+.capicon{
+    height: 3em;
+    padding-top: 5em;
+    position: relative;
+    left: 4%;
+}
