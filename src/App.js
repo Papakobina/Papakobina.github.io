@@ -1,12 +1,16 @@
 import './App.css';
-import TopNavBar from './components/TopNavBar/TopNav';
+import TopNavBarComponent from './components/TopNavBar/TopNav';
+import FirstBodyComponent from './components/FirstBodyofHomeComponent/Body';
+
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <TopNavBar />
+        <TopNavBarComponent />
       </header>
+      <FirstBodyComponent />
     </div>
   );
 }
