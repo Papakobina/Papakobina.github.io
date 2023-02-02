@@ -23,12 +23,12 @@ function TopNavBarComponent(){
                 	<h1>Volta Energy</h1>
 				</div>
             </div>
-            <div>
+            <div className="links">
 			<nav ref={navRef}>
-				<a href="/#">Home</a>
-				<a href="/#">Blog</a>
-				<a href="/#">Contact</a>
-				<a href="/#">About</a>
+				<a href="/#" className="home">Home</a>
+				<a href="/#" className="Blog">Blog</a>
+				<a href="/#" className="Contact">Contact</a>
+				<a href="/#" className="About">About</a>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>
