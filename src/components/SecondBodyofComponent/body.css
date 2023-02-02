@@ -1,0 +1,28 @@
+.Holder{
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    overflow-x: hidden;
+    background-color: gray;
+}
+.title{
+    text-decoration: underline;
+    font-size: 50px;
+
+}
+.Writting{
+    align-items: left;
+    width: 50%;
+    height: 100%;
+    padding-top: 4em;
+    padding-left: 4em;
+
+}
+.FirstParagraph{
+    font-size: larger;
+    padding-top: 2em;
+}
+.image{
+    margin-left: 15%;
+}

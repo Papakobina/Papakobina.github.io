@@ -2,31 +2,61 @@
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
-    overflow: hidden;
+    /* overflow: hidden; */
+    /* overflow-x: hidden; */
 
 }
 .container{
     display: inline-flex;
     flex-direction: column;
     background-color: #00746e;
-    width: 213vh;
+    width: 100vw;
     height: 90vh;
 }
 
+.parallax1 {
+    /* The image used */
+    background-image: url('./VoltaTrace.png');
+  
+    /* Full height */
+    height: 45;
+    width: 45; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  .parallax2 {
+    /* The image used */
+    background-image: url('./VoltaColoured.png');
+  
+    /* Full height */
+    height: 45;
+    width: 45;   
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
 .holder{
     animation: dance 0.5s infinite;
-    padding-top: 18em;
+    padding-top: 20%;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
+    
 }
 .container .dynamiclist{
     line-height: 90px;
+    width: 100vw;
     /* background-color: #023058; */
     overflow: hidden;
 }
 
-.dynamiclist li::after{
+/* .dynamiclist li::after{
     content: '';
     position: absolute;
     height: 100%;
@@ -40,13 +70,25 @@
     list-style: none;
     color: #023058;
     position: relative;
-}
+} */
 
 .Textheader{
     text-align: left;
-    font-size: 30px;
-    padding-left: 5em;
-    padding-top: 5em;
+    font-size: 300%;
+    padding-left: 10%;
+    padding-top: 5%;
+    animation: slideInLeft 2s 1;
+}
+.Subheading{
+    text-align: left;
+    font-size: 200%;
+    padding-left: 10%;
+    color: #023058;
+    animation: slideInLeft 4s 1;
+}
+.headerholder{
+    width: 90%;
+    padding-top: 0;
 }
 
 .button{
@@ -59,8 +101,16 @@
     padding-top: 2em;
     padding-bottom: 2em;
     font-weight: 900;
+    cursor: pointer;
 }
-
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
 @keyframes typing{
     40%,60%{
         left: calc(30% + 1px);

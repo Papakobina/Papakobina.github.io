@@ -5,20 +5,20 @@
 	margin: 0;
 	box-sizing: border-box;
 	font-family: "Titillium Web", sans-serif;
-	overflow: hidden;
+	/* overflow: hidden; */
 }
 
 :root {
 	/* 00172b */
-	--mainColor: rgb(0, 153, 255);
+	--mainColor: #00172b;
 	--mainColorLight: #5767aa;
 	--secondaryColor: grey;
-	--textColor: black;
+	--textColor: white;
 }
 .Logo{
     display: inline-flex;
 	flex-direction: row;
-	width: max-content;
+	width: 100%;
 }
 .logoimage{
 	padding-top: 10%;
@@ -31,8 +31,9 @@
 	display: flex;
 	padding-left: 5%;
 	align-items: center;
+	font-size: 100%;
 	flex-direction: row;
-	width: 100%;
+	width: 200%;
 }
 
 
@@ -63,7 +64,11 @@ nav a {
 nav a:hover {
 	/* color: var(--secondaryColor); */
 	color: #004e92;
-    text-decoration: underline;
+}
+.home:hover, .Blog:hover,.Contact:hover,.About:hover{
+	text-decoration: underline;
+
+
 }
 
 header .nav-btn {
@@ -108,6 +113,7 @@ header nav{
 		gap: 1.5rem;
 		background-color: var(--mainColor);
 		transition: 1s;
+		opacity: 1;
 		transform: translateY(-100vh);
 	}
 

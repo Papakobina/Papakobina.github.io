@@ -1,7 +1,7 @@
 import './App.css';
 import TopNavBarComponent from './components/TopNavBar/TopNav';
 import FirstBodyComponent from './components/FirstBodyofHomeComponent/Body';
-
+import SecondBodyComponent from './components/SecondBodyofComponent/body';
 
 
 function App() {
@@ -11,6 +11,7 @@ function App() {
         <TopNavBarComponent />
       </header>
       <FirstBodyComponent />
+      <SecondBodyComponent />
     </div>
   );
 }

@@ -6,13 +6,24 @@ function FirstBodyComponent(){
     return(
         <>
         <div className="container">
-            <div className="Textheader">
-                <h1> Volta Energy</h1>
-                <ul className="dynamiclist">
-                    <li><span>Changing the Way You Think About Electricity!</span></li>
-                   
+            <div className="headerholder">
+                <div className="Textheader">
+                    <h1 className="headertitle">Volta Energy </h1>
+                    {/* <ul className="dynamiclist">
+                        <li><span>Changing the Way You Think About Electricity!</span></li>
+                    </ul> */}
+                </div>
+                <div className="Subheading">
+                    <p>Changing the Way You Think About Electricity!</p>
+                </div>
 
-                </ul>
+            </div>
+            <div>
+            {/* <div className="parallax1"></div>
+                <div className="height:0px">
+                </div>
+
+                <div className="parallax2"></div> */}
             </div>
         <div className="holder">
         <button className="button"> 
