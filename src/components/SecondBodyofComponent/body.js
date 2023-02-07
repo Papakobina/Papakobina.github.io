@@ -1,5 +1,6 @@
 import React from 'react';
 import './body.css';
+// import ScrollAnimation from 'react-animation-on-scroll';
 import color from './VoltaColoured.png'
 
 
@@ -8,7 +9,10 @@ function SecondBodyComponent(){
         <>
         <div className='Holder'>
             <div className='Writting'> 
+               
                 <h1 className='title'>About us</h1>  
+
+                
                 <div>
                     <p className='FirstParagraph'>Generating random paragraphs can be an excellent way for writers to get their creative flow going at the 
                         beginning of the day. The writer has no idea what topic the random paragraph will be about when it appears. 

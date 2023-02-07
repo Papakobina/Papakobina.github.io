@@ -3,26 +3,47 @@
     height: 70vh;
     display: flex;
     flex-direction: row;
-    overflow-x: hidden;
-    background-color: gray;
+    overflow: hidden;
+    background-color: rgb(212, 212, 212);
 }
 .title{
     text-decoration: underline;
-    font-size: 50px;
+    font-size: 400%;
 
 }
 .Writting{
     align-items: left;
     width: 50%;
     height: 100%;
-    padding-top: 4em;
-    padding-left: 4em;
+    padding-top: 8%;
+    padding-left: 8%;
+    padding-bottom: 8%;
 
 }
 .FirstParagraph{
     font-size: larger;
-    padding-top: 2em;
+    padding-top: 10%;
+    animation: slideInLeft 4s 1;
+
 }
 .image{
     margin-left: 15%;
+    padding-top: 12%;
+}
+
+@keyframes slideInLeft {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+@keyframes typing{
+    40%,60%{
+        left: calc(30% + 1px);
+    }
+    100%{
+        left: 0;
+    }
 }
