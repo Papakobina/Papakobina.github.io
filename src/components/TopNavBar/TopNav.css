@@ -10,10 +10,10 @@
 
 :root {
 	/* 00172b */
-	--mainColor: #00172b;
+	--mainColor: white;
 	--mainColorLight: #5767aa;
 	--secondaryColor: grey;
-	--textColor: white;
+	--textColor: #00172b;
 }
 .Logo{
     display: inline-flex;
@@ -21,13 +21,13 @@
 	width: 100%;
 }
 .logoimage{
-	padding-top: 10%;
-	padding-bottom: 10%;
+	padding-top: 5%;
+	padding-bottom: 5%;
 }
 
 .logoTitle{
-	padding-top: 10%;
-	padding-bottom: 10%;	
+	padding-top: 5%;
+	padding-bottom: 5%;	
 	display: flex;
 	padding-left: 5%;
 	align-items: center;
@@ -42,10 +42,12 @@ header {
 	align-items: center;
 	justify-content: space-between;
 	height: max-content;
-	padding: 0 2rem;
 	background-color: var(--mainColor);
 	color: var(--textColor);
 	width: 100vw;
+	position: fixed;
+  	top: 0;
+	box-shadow: 1em rgb(212, 212, 212);
 }
 .links{
 	padding-left: 40%;
@@ -55,9 +57,9 @@ nav a {
 	color: var(--textColor);
 	text-decoration: none;
 	width: 120px;
-	padding-top: 10%;
+	padding-top: 5%;
 	font-size: 1.2em;
-	padding-bottom: 10%;
+	padding-bottom: 5%;
 }
 
 

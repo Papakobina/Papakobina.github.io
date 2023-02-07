@@ -6,12 +6,17 @@
     /* overflow-x: hidden; */
 
 }
+.MainPageImage{
+    padding-right: 15%;
+
+}
 .container{
     display: inline-flex;
-    flex-direction: column;
-    background-color: #00746e;
+    flex-direction: row;
+    background-color: rgb(212, 212, 212);
     width: 100vw;
     height: 90vh;
+    align-items: center;
 }
 
 .parallax1 {
@@ -76,7 +81,7 @@
     text-align: left;
     font-size: 300%;
     padding-left: 10%;
-    padding-top: 5%;
+    margin-top: -5%;
     animation: slideInLeft 2s 1;
 }
 .Subheading{

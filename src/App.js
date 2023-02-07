@@ -2,6 +2,7 @@ import './App.css';
 import TopNavBarComponent from './components/TopNavBar/TopNav';
 import FirstBodyComponent from './components/FirstBodyofHomeComponent/Body';
 import SecondBodyComponent from './components/SecondBodyofComponent/body';
+import FlippableCard from './components/ThirdBodyComponent/body3';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       </header>
       <FirstBodyComponent />
       <SecondBodyComponent />
+
     </div>
   );
 }
