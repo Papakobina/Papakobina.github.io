@@ -1,6 +1,5 @@
 import './body3.css';
 import React,{useState} from 'react';
-import { AnimationOnScroll } from 'react-animation-on-scroll';
 
 
 function ThirdBodyComponent() {
@@ -38,7 +37,7 @@ function ThirdBodyComponent() {
                     </div>            
             ): null}
             <div className='learnmorebutton'>
-                <button class="plusbutton" role="button" onClick={() => setShowVoltaInsiteDescription(!showVoltaInsiteDescription)}><span class="text">{handleButtonText()}</span></button>
+                <button class="plusbutton" onClick={() => setShowVoltaInsiteDescription(!showVoltaInsiteDescription)}><span class="text">{handleButtonText()}</span></button>
 
             </div>
 
