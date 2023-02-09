@@ -1,34 +1,39 @@
 .Holder{
     width: 100vw;
     height: 70vh;
-    display: flex;
-    flex-direction: row;
     overflow: hidden;
     background-color: rgb(212, 212, 212);
+    padding-bottom: 10%;
 }
 .title{
     text-decoration: underline;
     font-size: 400%;
+}
+.subdiv{
+     display: flex;
+    flex-direction: row;
 
 }
+
 .Writting{
     align-items: left;
     width: 50%;
     height: 100%;
     padding-top: 8%;
     padding-left: 8%;
-    padding-bottom: 8%;
 
 }
 .FirstParagraph{
     font-size: larger;
-    padding-top: 10%;
     animation: slideInLeft 4s 1;
 
 }
+.containerTitle{
+    padding-left: 43%;
+}
 .image{
     margin-left: 15%;
-    padding-top: 12%;
+    padding-top: 2%;
 }
 
 @keyframes slideInLeft {
