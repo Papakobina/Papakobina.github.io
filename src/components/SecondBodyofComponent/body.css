@@ -10,7 +10,7 @@
     font-size: 400%;
 }
 .subdiv{
-     display: flex;
+    display: flex;
     flex-direction: row;
 
 }
