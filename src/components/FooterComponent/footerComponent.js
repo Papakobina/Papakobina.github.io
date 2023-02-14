@@ -23,6 +23,7 @@ function FooterCompoenet(){
                     <h2>Contacts</h2>
                     <h3><a href="nquiry@voltaenergy.ca" target='_blank'>enquiry@voltaenergy.ca</a></h3>
                     <h3>(416)-282-8658</h3>
+                    <h3> 87 Thornmount Drive, Unit 16 Toronto,<br></br> Ontario M1B 5S5 </h3>
                 </div>
                 <div className="Socials">
                     <h2>Socials</h2>
