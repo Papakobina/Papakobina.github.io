@@ -1,0 +1,6 @@
+.counter{
+    overflow: hidden;
+    width: 100vw;
+    display: flex;
+    background-color: #5767aa;
+}

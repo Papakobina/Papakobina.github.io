@@ -46,6 +46,7 @@ header {
 	color: var(--textColor);
 	width: 100vw;
 	position: fixed;
+	overflow: hidden;
   	top: 0;
 	box-shadow: 1em rgb(212, 212, 212);
 }

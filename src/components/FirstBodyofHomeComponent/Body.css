@@ -3,7 +3,6 @@
 	margin: 0;
 	box-sizing: border-box;
     /* overflow: hidden; */
-    /* overflow-x: hidden; */
 
 }
 .MainPageImage{
@@ -17,6 +16,8 @@
     width: 100vw;
     height: 90vh;
     align-items: center;
+    overflow: hidden;
+
 }
 
 .parallax1 {
