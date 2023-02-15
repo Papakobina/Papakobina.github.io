@@ -26,9 +26,9 @@ function TopNavBarComponent(){
             <div className="links">
 			<nav ref={navRef}>
 				<a href="/#" className="home">Home</a>
-				<a href="/#" className="Blog">Blog</a>
-				<a href="/#" className="Contact">Contact</a>
-				<a href="/#" className="About">About</a>
+				<a href="/blog" className="Blog">Blog</a>
+				<a href="/contact" className="Contact">Contact</a>
+				<a href="/about" className="About">About</a>
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>
