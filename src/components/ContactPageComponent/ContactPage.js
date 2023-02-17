@@ -21,68 +21,25 @@ function ContactPageComponent(){
 
     return(
         <>
-        <div className="contactsPageContainer">
-            <div className="contactDisplaySection">
-                <div className="contactDisplaySectionTitle">
-                    <h1 className="textheadercontact">Contact us</h1>
+        	<div class="formContainer">
+                <div class="nameInputContact">
+                    <input type="text" required placeholder="Name"/>
                 </div>
-                <div className="subsection">
-                    <div className="ContactPageSocials">
-                        <a href="https://www.linkedin.com/company/volta-energy/mycompany/" target="_blank"><img src={linkedin} alt='linkedin' height='45' width='45'/></a>
-                        <a href="https://www.instagram.com/voltanrg/?hl=en" target='_blank'><img src={instagram} alt='Instagram'/></a>
-                        <a href="https://www.tiktok.com/@voltanrg" target='_blank'><img src={tiktok} alt='tiktok'/></a>
+                <div className="emailandphone">
+                    <div classname="emailInputContact">
+                        <input type="text" required placeholder="Email"/>
                     </div>
-                    <div className="emailsection">
-                        <h3>Email: <a href="nquiry@voltaenergy.ca" target='_blank'>enquiry@voltaenergy.ca</a></h3>
-                    </div>
-                    <div className="phoneSection">
-                        <h3>Phone: 416.282.8658</h3>
+                    <div class="phoneInput" >
+                        <input type="text" required placeholder="Phone Number"/>
                     </div>
                 </div>
-            </div>
-            <div className="formSection">
-            <form>
-    
-                <div class="group">      
-                    <input className="inputs" type="text" required placeholder="Name"/>
-                    <span class="highlight"></span>
-                    <span class="bar"></span>
+                <div class="messageInput">
+                    <textarea required placeholder="Message"></textarea>
                 </div>
-                <div className="inputArea">
-
-                    <div class="group">      
-                        <input className="inputs"type="text" required placeholder="Email"/>
-                        <span class="highlight"></span>
-                        <span class="bar"></span>
-                    </div>
-                    <div className="MessageArea">
-                        <textarea classname="messageboxcontact" placeholder="Enter Message"/>
-                    </div>
-                    <div>
-                        <button class="sendbutton" type="submit" ><span class="text">Send</span></button>
-
-                    </div>
+                <div classname="sendButtonContactdiv">
+                    <button classname="sendButtonContact" type="submit" ><span class="text">Send</span></button>
                 </div>
-                
-            </form>
-                {/* <form onSubmit={onSubmit}>
-                    <div className="mb-3">
-                        <input className="form-control" type="text" id="name" required placeholder="Enter Name here..."/>
-                    </div>
-                    <div className="mb-3">
-                        <input className="form-control" type="email" id="email" required placeholder="Enter Email here..."/>
-                    </div>
-                        <div className="mb-3">
-                        <textarea className="form-control" id="message" required placeholder="Enter message here.."/>
-                    </div>
-                        <div className='learnmorebuttonSpice'>
-                            <button class="sendbutton" type="submit" ><span class="text">Send</span></button>
-                        </div>
-            </form> */}
-
-            </div>
-
-        </div>
+	        </div>
         </>
     );
 };
