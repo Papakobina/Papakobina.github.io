@@ -19,7 +19,7 @@ function FooterCompoenet(){
                     </div>
                     <div class="form-input">
                     <form class="form">
-                        <input type="email" className="form__field" placeholder="Your E-Mail Address" />
+                        <input type="email" className="inputforsubcription" placeholder="Your E-Mail Address" />
                         <button type="button" className="btn">Send</button>
                     </form>
                         {/* <input className="emailinputforSubscription" type="email" placeholder="Enter Email"/>
