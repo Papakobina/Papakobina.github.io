@@ -4,6 +4,7 @@
     height: 60vw;
     align-items: center;
     flex-direction: row;
+    background: #757575;
     /* color: white; */
     color: black;
     overflow: hidden;
@@ -12,12 +13,20 @@
 
 .contactDisplaySection{
     padding-right: 20%;
-    padding-left: 20%;
+    padding-left: 15%;
     
 }
 
 .textheadercontact{
     font-size: 350%;
+}
+
+.formSection{
+  background-color: white;
+  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+  padding: 10%;
+  left: 50%;
+
 }
 
 .inputs         {
@@ -26,6 +35,7 @@
     display:block;
     width:300px;
     border:none;
+    background-color: white;
     border-bottom:1px solid #757575;
   }
   .inputs:focus     { outline:none; }
@@ -49,7 +59,6 @@
     top:-20px;
     font-size:14px;
     color:#5264AE;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   }
   
   /* BOTTOM BARS ================================= */
@@ -125,6 +134,9 @@
   }
   .inputArea{
     display: flex;
+  }
+  .MessageArea{
+    top: 50%;
   }
   .group{
     padding-right: 10%;
