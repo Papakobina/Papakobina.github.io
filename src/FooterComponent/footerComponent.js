@@ -13,15 +13,15 @@ function FooterCompoenet(){
         <div className="footer">
             <div className="subscribeContainer">
                 <form action="#" class="card-content">
-                    <div class="containerSubscribe">
+                    <div className="containerSubscribe">
                     <h1>Subscribe</h1>
                     <p>Subscribe to our newsletter and stay updated.</p>
                     </div>
-                    <div class="form-input">
-                    <form class="form">
-                        <input type="email" className="inputforsubcription" placeholder="Your E-Mail Address" />
-                        <button type="button" className="btn">Send</button>
-                    </form>
+                    <div className="forminput">
+                        <form className="form">
+                            <input type="email" className="inputforsubcription" placeholder="Your E-Mail Address" />
+                            <button type="button" className="btn">Send</button>
+                        </form>
                         {/* <input className="emailinputforSubscription" type="email" placeholder="Enter Email"/>
                         <button className="subscribe-btn">Subscribe</button> */}
                     </div>

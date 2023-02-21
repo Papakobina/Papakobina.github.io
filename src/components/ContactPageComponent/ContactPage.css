@@ -13,8 +13,7 @@
 
 .contactDisplaySection{
     padding-right: 20%;
-    padding-left: 15%;
-    
+    padding-left: 15%;    
 }
 
 .textheadercontact{
@@ -26,33 +25,8 @@
   box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
   padding: 10%;
   left: 50%;
-
 }
 
-.messageboxcontact{
-  font-size: larger;
-}
-input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid ~ label {
-  font-size: 0.75em;
-  color: #999;
-  top: -5px;
-  -webkit-transition: all 0.225s ease;
-  transition: all 0.225s ease;
-}
-
-.styled-input {
-  float: left;
-  width: 293px;
-  margin: 1rem 0;
-  position: relative;
-  border-radius: 4px;
-}
-
-@media only screen and (max-width: 768px){
-  .styled-input {
-      width:100%;
-  }
-}
 .sendButtonContact{
   padding-top: 10%;
   padding-bottom: 10%;
@@ -134,22 +108,46 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
   display: flex;
   flex-direction: column;
   padding-left: 40%;
+  background-color: brown;
+  margin-left: 5%;
+  margin-right: 5%;
+
+}
+.contactcontainer{
+  background-color: pink;
+}
+
+.titleforcontact{
+  padding-left: 25%;
 }
 
 .nameInputContact{
-  float: left;
   width: 65%;
   margin: 1rem 0;
   border-radius: 4px;
 }
 
-.emailInputContact{
-  float: left;
-  width: 10%;
-  margin: 1rem 0;
+.emailinputContactUs{
+  padding: 17%;
+  border: 0;
+  width: 130%;
+  font-size: 1rem;
+  background-color: #2d2d2d;
+  color: white;
+  border-radius: 4px;
+}
+
+.phoneinputContactUs{
+  padding: 3%;
+  border: 0;
+  width: 85%;
+  font-size: 1rem;
+  background-color: #2d2d2d;
+  color: white;
   border-radius: 4px;
 
 }
+
 .emailandphone{
   display: flex;
   flex-direction: row;
@@ -157,12 +155,9 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
   margin-bottom: 2%;
 }
 
-.emailInputContact{
-  width: 200%;
-}
 
 .phoneInput{
-  width: 45%;
+  width: 100%;
   padding-left: 15%;
 
 }
@@ -173,13 +168,7 @@ input:focus ~ label, textarea:focus ~ label, input:valid ~ label, textarea:valid
 
   
 }
-.styled-input.wide { 
-  width: 650px;
-  max-width: 100%;
-}
-
-input,
-textarea {
+.inputContactUs{
   padding: 30px;
   border: 0;
   width: 100%;
@@ -189,27 +178,167 @@ textarea {
   border-radius: 4px;
 }
 
-input:focus,
-textarea:focus { outline: 0; }
-
-input:focus ~ span,
-textarea:focus ~ span {
+.textareaContactUs{
+  padding: 30px;
+  border: 0;
   width: 100%;
-  -webkit-transition: all 0.075s ease;
-  transition: all 0.075s ease;
-}
-
-textarea {
+  font-size: 1rem;
+  background-color: #2d2d2d;
+  color: white;
+  border-radius: 4px;
   width: 100%;
   min-height: 15em;
 }
 
-.input-container {
-  width: 650px;
+
+.plusbuttonSpice{
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-right: 35%;
+  padding-left: 35%;
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
   max-width: 100%;
-  margin: 20px auto 25px auto;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
 }
 
-.sendButtonContactdiv{
-  background-color: pink;
+.plusbuttonSpice{
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.plusbuttonSpice:active,
+.plusbuttonSpice:hover {
+  outline: 0;
+}
+
+.plusbuttonSpice span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.plusbuttonSpice:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .plusbuttonSpice {
+    font-size: 24px;
+    min-width: 196px;
+  }
+}
+.sendButtonContact{
+  padding-top: 10%;
+  padding-bottom: 10%;
+  padding-right: 35%;
+  padding-left: 35%;
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.sendButtonContact{
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-size: 20px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 3px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.sendButtonContact:active,
+.sendButtonContact:hover {
+  outline: 0;
+}
+
+.sendButtonContact span {
+  background-color: rgb(5, 6, 45);
+  padding: 16px 24px;
+  border-radius: 6px;
+  width: 100%;
+  height: 100%;
+  transition: 300ms;
+}
+
+.sendButtonContact:hover span {
+  background: none;
+}
+
+@media (min-width: 768px) {
+  .sendButtonContact {
+    font-size: 24px;
+    min-width: 196px;
+  }
 }
