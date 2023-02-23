@@ -36,7 +36,7 @@
     width: 30vw;
     height: 20vh;
     padding-top: 2%;
-    padding-left: 6%;
+    padding-left: 5%;
     padding-bottom: 5%;
     align-items: center;
     border-radius: 1rem;
@@ -50,6 +50,7 @@
     color: white;
 	border: 0;
 	outline: 0;
+    font-size: larger;
 	padding: 0;
 	transition: all 200ms ease-in;
 	cursor: pointer;
@@ -79,6 +80,7 @@
 
 .inputforsubcription{   
     padding-left: 10%;
+    font-size: larger;
     padding-right: 10%;
     padding-top: 2.8%;
     padding-bottom: 2.8%;

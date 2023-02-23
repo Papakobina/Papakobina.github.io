@@ -1,5 +1,7 @@
 import './App.css';
 import TopNavBarComponent from './components/TopNavBar/TopNav';
+import AboutPageComponent from "./components/AboutPageComponent/AboutPage";
+import BlogPageComponent from './components/BlogPageComponent/BlogPage';
 import ContactPageComponent from './components/ContactPageComponent/ContactPage';
 import { Routes, Route } from 'react-router-dom';
 import React from 'react';
@@ -15,6 +17,10 @@ function App() {
       <Routes>
         <Route path="/" element={<HomeApp />} />
         <Route path="contact" element={<ContactPageComponent />}/>
+        <Route path="about" element={<AboutPageComponent />}/>
+        <Route path="blog" element={<BlogPageComponent />}/>
+
+
       </Routes>
 
 
