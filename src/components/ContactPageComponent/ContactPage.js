@@ -22,8 +22,12 @@ function ContactPageComponent(){
     return(
         <>
             <div className="contactcontainer">
+                <div className="displayContacts">
+                    <h1>Contact Us</h1>
+
+                </div>
                 <div className="formContainer">
-                    <h1 className="titleforcontact"> Contact Us</h1>
+                    <h1 className="titleforcontact"> Get in touch</h1>
                     <div className="nameInputContact">
                         <input className="inputContactUs" type="text" required placeholder="Name"/>
                     </div>

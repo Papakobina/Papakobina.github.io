@@ -1,7 +1,6 @@
 .contactsPageContainer{
     display: flex;
     width: 100vw;
-    height: 60vw;
     align-items: center;
     flex-direction: row;
     background: #757575;
@@ -11,21 +10,12 @@
     /* background-color: rgb(121, 121, 121); */
 }
 
-.contactDisplaySection{
-    padding-right: 20%;
-    padding-left: 15%;    
-}
+
 
 .textheadercontact{
     font-size: 350%;
 }
 
-.formSection{
-  background-color: white;
-  box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
-  padding: 10%;
-  left: 50%;
-}
 
 .sendButtonContact{
   padding-top: 10%;
@@ -103,18 +93,21 @@
     min-width: 196px;
   }
 }
-.formContainer{
+
+.displayContacts{
   padding-top: 15%;
+  /* padding-left: 40%; */
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.formContainer{
+  padding-top: -5%;
   display: flex;
   flex-direction: column;
   padding-left: 40%;
-  background-color: brown;
   margin-left: 5%;
   margin-right: 5%;
 
-}
-.contactcontainer{
-  background-color: pink;
 }
 
 .titleforcontact{
@@ -130,7 +123,7 @@
 .emailinputContactUs{
   padding: 17%;
   border: 0;
-  width: 130%;
+  width: 160%;
   font-size: 1rem;
   background-color: #2d2d2d;
   color: white;
@@ -138,9 +131,9 @@
 }
 
 .phoneinputContactUs{
-  padding: 3%;
+  padding: 17%;
   border: 0;
-  width: 85%;
+  width: 170%;
   font-size: 1rem;
   background-color: #2d2d2d;
   color: white;
@@ -148,18 +141,15 @@
 
 }
 
+.phoneInput{
+  padding-left: 16%;
+}
+
 .emailandphone{
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-bottom: 2%;
-}
-
-
-.phoneInput{
-  width: 100%;
-  padding-left: 15%;
-
 }
 
 
