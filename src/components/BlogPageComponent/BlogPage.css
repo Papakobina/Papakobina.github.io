@@ -1,0 +1,10 @@
+.blogpagecomponent{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.verticalLine {
+    border-left: 6px solid black;
+    height: 100vh;
+}
