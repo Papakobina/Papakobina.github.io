@@ -3,6 +3,7 @@ import TopNavBarComponent from './components/TopNavBar/TopNav';
 import AboutPageComponent from "./components/AboutPageComponent/AboutPage";
 import BlogPageComponent from './components/BlogPageComponent/BlogPage';
 import ContactPageComponent from './components/ContactPageComponent/ContactPage';
+import FooterComponent from './FooterComponent/footerComponent';
 import { Routes, Route } from 'react-router-dom';
 import React from 'react';
 import HomeApp from './HomeApp';
@@ -19,10 +20,8 @@ function App() {
         <Route path="contact" element={<ContactPageComponent />}/>
         <Route path="about" element={<AboutPageComponent />}/>
         <Route path="blog" element={<BlogPageComponent />}/>
-
-
       </Routes>
-
+      <FooterComponent />
 
     </div>
   );
