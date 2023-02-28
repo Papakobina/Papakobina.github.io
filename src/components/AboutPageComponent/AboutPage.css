@@ -1,58 +1,105 @@
-.aboutuspage{
+.aboutuspage {
     display: flex;
     flex-direction: column;
     padding-top: 5%;
-}
-
-.firstrow{
+    background-color: white;
+  }
+  
+  .firstrow {
     display: flex;
     flex-direction: row;
-    padding-left: 20%;
-    padding-top: 5%;
-
-}
-
-.secondrow{
-    display: flex;
-    flex-direction: row;
-    padding-left: 20%;
-    padding-top: 10%;
-
-}
-
-.firstImagecontainer{
-    margin-right: 35%;
+    justify-content: center;
     align-items: center;
+    padding-top: 5%;
+  }
+  
+  .secondrow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    padding-bottom: 10%;
+  }
+  
+  .firstImagecontainer,
+  .SecondImagecontainer,
+  .thirdImagecontainer,
+  .fourthImagecontainer {
     display: flex;
     flex-direction: column;
-    background-color: grey;
+    justify-content: center;
+    align-items: center;
+    /* background-color: grey; */
     width: 20%;
-}
+    height: 600px;
+    border-radius: 10px;
+    margin: 0 20px;
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB) border-box;
+    border: 4px solid transparent;
+    color:  rgb(31, 31, 97);
+    
+    
 
-.thirdImagecontainer{
-    padding-right: 35%;
-}
-
-
-.firstimage{
+  }
+  
+  .firstimage,
+  .secondimage,
+  .thirdimage,
+  .fourthimage {
     cursor: pointer;
-    padding-top: 5%;
-}
-
-.secondimage{
-    cursor: pointer;
-}
-
-.thirdimage{
-    cursor: pointer;
-}
-
-.fourthimage{
-    cursor: pointer;
-}
-
-.firstimageheading{
+  }
+  
+  .card {
+    padding: 20px;
+    text-align: left;
+  }
+  
+  .firstimageheading {
     text-decoration: underline;
     font-size: 1.5rem;
-    text-align: left;
-}
+  }
+  .image-container {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .image-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+  
+  .image-container:hover .image-overlay {
+    opacity: 1;
+  }
+  
+  .image-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+
+  }
+
+  .image-button:hover{
+    border-radius: 10px;
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB) border-box;
+    border: 4px solid transparent;
+    color:  rgb(31, 31, 97);
+
+  }
