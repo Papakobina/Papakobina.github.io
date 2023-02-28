@@ -1,0 +1,58 @@
+.aboutuspage{
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+}
+
+.firstrow{
+    display: flex;
+    flex-direction: row;
+    padding-left: 20%;
+    padding-top: 5%;
+
+}
+
+.secondrow{
+    display: flex;
+    flex-direction: row;
+    padding-left: 20%;
+    padding-top: 10%;
+
+}
+
+.firstImagecontainer{
+    margin-right: 35%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background-color: grey;
+    width: 20%;
+}
+
+.thirdImagecontainer{
+    padding-right: 35%;
+}
+
+
+.firstimage{
+    cursor: pointer;
+    padding-top: 5%;
+}
+
+.secondimage{
+    cursor: pointer;
+}
+
+.thirdimage{
+    cursor: pointer;
+}
+
+.fourthimage{
+    cursor: pointer;
+}
+
+.firstimageheading{
+    text-decoration: underline;
+    font-size: 1.5rem;
+    text-align: left;
+}

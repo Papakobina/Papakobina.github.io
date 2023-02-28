@@ -21,7 +21,7 @@ function App() {
         <Route path="about" element={<AboutPageComponent />}/>
         <Route path="blog" element={<BlogPageComponent />}/>
       </Routes>
-      <FooterComponent />
+      {/* <FooterComponent /> */}
 
     </div>
   );
