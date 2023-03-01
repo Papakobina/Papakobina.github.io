@@ -1,3 +1,24 @@
+.whoarewe{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+  /* background-color: rgb(53, 117, 53); */
+  background-color:  rgb(86, 144, 211);
+  color: white;
+
+}
+
+.aboutuscontainer{
+  padding-top: 6%;
+}
+.whoareweparagraph{
+  padding-top: 2%;
+  font-size: 150%;
+}
+.team{
+  text-align: center;
+}
 .aboutuspage {
     display: flex;
     flex-direction: column;
@@ -30,7 +51,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* background-color: grey; */
     width: 20%;
     height: 600px;
     border-radius: 10px;
@@ -42,6 +62,14 @@
     
     
 
+  }
+
+  .firstImagecontainer{
+    margin-right: 7%;
+  }
+
+  .thirdImagecontainer{
+    margin-right: 7%;
   }
   
   .firstimage,
@@ -56,10 +84,6 @@
     text-align: left;
   }
   
-  .firstimageheading {
-    text-decoration: underline;
-    font-size: 1.5rem;
-  }
   .image-container {
     position: relative;
     display: inline-block;
