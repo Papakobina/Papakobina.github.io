@@ -1,3 +1,23 @@
+.contactcontainer{
+  display: flex;
+  flex-direction: row;
+  margin-top: 15%;
+}
+.formContainer{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-left: 4%;
+
+}
+.displayContacts{
+  margin-left: 5%;
+  margin-top: 5%;
+  font-size: 150%;
+  width: 40%;
+
+}
+
 .contactsPageContainer{
     display: flex;
     width: 100vw;
@@ -94,21 +114,7 @@
   }
 }
 
-.displayContacts{
-  padding-top: 15%;
-  /* padding-left: 40%; */
-  margin-left: 5%;
-  margin-right: 5%;
-}
-.formContainer{
-  padding-top: -5%;
-  display: flex;
-  flex-direction: column;
-  padding-left: 40%;
-  margin-left: 5%;
-  margin-right: 5%;
 
-}
 
 .titleforcontact{
   padding-left: 25%;
