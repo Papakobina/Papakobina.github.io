@@ -23,66 +23,66 @@ function AboutPageComponent(){
             </div>
 
           </div>
-          <div className="aboutuspage">
-            <div className="team">
-              <h1>Our Team</h1>
-            </div>
-            <div className="firstrow">
-              <div class="firstImagecontainer">
-                <div class="image-container">
-                  <img src={denis} alt='denis' width={280} height={280}/>
-                  <div class="image-overlay">
-                    <div class="image-button">Contact</div>
-                  </div>
-                </div>
-                <div class="card">
-                  <h1 className="firstimageheading">CEO</h1>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-                </div>
-            </div>
-          <div class="SecondImagecontainer">
-              <div class="image-container">
-              <img src={daniel} alt='daniel' width={280} height={280}/>
-                <div class="image-overlay">
-                  <div class="image-button">Contact</div>
-                </div>
-              </div>
-              <div class="card">
-                <h1 className="secondimageheading">COO</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-              </div>
-          </div>
-          </div>
-          <div className="secondrow">
-            <div class="thirdImagecontainer">
-              <div class="image-container">
-              <img src={john} alt='john' width={280} height={280}/>
-                <div class="image-overlay">
-                  <div class="image-button">Contact</div>
-                </div>
-              </div>
-              <div class="card">
-                <h1 className="thirdimageheading">CFO</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-              </div>
-          </div>
-          <div class="fourthImagecontainer">
-              <div class="image-container">
-              <img src={adriana} alt='adriana' width={280} height={280}/>
-                <div class="image-overlay">
-                  <div class="image-button">Contact</div>
-                </div>
-              </div>
-              <div class="card">
-                <h1 className="fourthimageheading">Marketing</h1>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-              </div>
-          </div>
-          </div>
-        </div>
         </div>
         </>
     );
-}
-
-export default AboutPageComponent;
+  }
+  
+  export default AboutPageComponent;
+  {/* <div className="aboutuspage">
+    <div className="team">
+      <h1>Our Team</h1>
+    </div>
+    <div className="firstrow">
+      <div class="firstImagecontainer">
+        <div class="image-container">
+          <img src={denis} alt='denis' width={280} height={280}/>
+          <div class="image-overlay">
+            <div class="image-button">Contact</div>
+          </div>
+        </div>
+        <div class="card">
+          <h1 className="firstimageheading">CEO</h1>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        </div>
+    </div>
+  <div class="SecondImagecontainer">
+      <div class="image-container">
+      <img src={daniel} alt='daniel' width={280} height={280}/>
+        <div class="image-overlay">
+          <div class="image-button">Contact</div>
+        </div>
+      </div>
+      <div class="card">
+        <h1 className="secondimageheading">COO</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+      </div>
+  </div>
+  </div>
+  <div className="secondrow">
+    <div class="thirdImagecontainer">
+      <div class="image-container">
+      <img src={john} alt='john' width={280} height={280}/>
+        <div class="image-overlay">
+          <div class="image-button">Contact</div>
+        </div>
+      </div>
+      <div class="card">
+        <h1 className="thirdimageheading">CFO</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+      </div>
+  </div>
+  <div class="fourthImagecontainer">
+      <div class="image-container">
+      <img src={adriana} alt='adriana' width={280} height={280}/>
+        <div class="image-overlay">
+          <div class="image-button">Contact</div>
+        </div>
+      </div>
+      <div class="card">
+        <h1 className="fourthimageheading">Marketing</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+      </div>
+  </div>
+  </div>
+</div> */}
