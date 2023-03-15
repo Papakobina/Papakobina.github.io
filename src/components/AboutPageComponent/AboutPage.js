@@ -3,6 +3,11 @@ import denis from "./imagesOnAboutPage/denis (1).jpg";
 import daniel from "./imagesOnAboutPage/daniel.jpg";
 import john from "./imagesOnAboutPage/john.jpg";
 import adriana from "./imagesOnAboutPage/adriana.jpg";
+import Carousel from 'react-bootstrap/Carousel';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
 import "./AboutPage.css"
 
 function AboutPageComponent() {
@@ -36,24 +41,11 @@ function AboutPageComponent() {
 
             Above are a few examples of how the random paragraph generator can be beneficial. The best way to see if this random paragraph picker will be useful for your intended purposes is to give it a try. Generate a number of paragraphs to see if they are beneficial to your current project.
 
-            If you do find this paragraph tool useful, please do us a favor and let us know how you're using it. It's greatly beneficial for us to know the different ways this tool is being used so we can improve it with updates. This is especially true since there are times when the generators we create get used in completely unanticipated ways from when we initially created them. If you have the time, please send us a quick note on what you'd like to see changed or added to make it better in the future.
+              If you do find this paragraph tool useful, please do us a favor and let us know how you're using it. It's greatly beneficial for us to know the different ways this tool is being used so we can improve it with updates. This is especially true since there are times when the generators we create get used in completely unanticipated ways from when we initially created them. If you have the time, please send us a quick note on what you'd like to see changed or added to make it better in the future.
+            </div>
+
           </div>
-          <div className="carousel-container">
-            <button onClick={handlePrevSlide}>&lt;</button>
-            <img src={images[currentSlideIndex]} alt="slide" />
-            <p>{descriptions[currentSlideIndex]}</p>
-            <button onClick={handleNextSlide}>&gt;</button>
-          </div>
-        </div>
-      </div>
-    </>
-  );
-}
-
-export default AboutPageComponent;
-
-
-/**  <div className="aboutuspage">
+          <div className="aboutuspage">
             <div className="team">
               <h1>Our Team</h1>
             </div>
@@ -109,4 +101,10 @@ export default AboutPageComponent;
               </div>
           </div>
           </div>
-        </div> */
+        </div>
+        </div>
+        </>
+    );
+}
+
+export default AboutPageComponent;
