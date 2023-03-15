@@ -1,29 +1,59 @@
-import React from "react";
+import React, { useState } from "react";
 import denis from "./imagesOnAboutPage/denis (1).jpg";
 import daniel from "./imagesOnAboutPage/daniel.jpg";
 import john from "./imagesOnAboutPage/john.jpg";
 import adriana from "./imagesOnAboutPage/adriana.jpg";
 import "./AboutPage.css"
 
+function AboutPageComponent() {
+  const images = [denis, daniel, john, adriana];
+  const descriptions = [
+    "Denis is a web developer with over 10 years of experience.",
+    "Daniel is a designer who specializes in user interfaces.",
+    "John is a content creator who loves writing about technology.",
+    "Adriana is a marketing expert who helps businesses grow."
+  ];
+  
+  const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
 
-function AboutPageComponent(){
-    return(
-        <>
-        <div className="aboutuscontainer">
-          <div className="whoarewe">
-            <div className="whoarewetitle">
-              <h1> Who Are we? </h1>
-            </div>
-            <div className="whoareweparagraph">
-              It's not only writers who can benefit from this free online tool. If you're a programmer who's working on a project where blocks of text are needed, this tool can be a great way to get that. It's a good way to test your programming and that the tool being created is working well.
+  const handlePrevSlide = () => {
+    setCurrentSlideIndex(currentSlideIndex === 0 ? images.length - 1 : currentSlideIndex - 1);
+  };
 
-              Above are a few examples of how the random paragraph generator can be beneficial. The best way to see if this random paragraph picker will be useful for your intended purposes is to give it a try. Generate a number of paragraphs to see if they are beneficial to your current project.
+  const handleNextSlide = () => {
+    setCurrentSlideIndex(currentSlideIndex === images.length - 1 ? 0 : currentSlideIndex + 1);
+  };
 
-              If you do find this paragraph tool useful, please do us a favor and let us know how you're using it. It's greatly beneficial for us to know the different ways this tool is being used so we can improve it with updates. This is especially true since there are times when the generators we create get used in completely unanticipated ways from when we initially created them. If you have the time, please send us a quick note on what you'd like to see changed or added to make it better in the future.
-            </div>
-
+  return (
+    <>
+      <div className="aboutuscontainer">
+        <div className="whoarewe">
+          <div className="whoarewetitle">
+            <h1> Who Are we? </h1>
           </div>
-          <div className="aboutuspage">
+          <div className="whoareweparagraph">
+            It's not only writers who can benefit from this free online tool. If you're a programmer who's working on a project where blocks of text are needed, this tool can be a great way to get that. It's a good way to test your programming and that the tool being created is working well.
+
+            Above are a few examples of how the random paragraph generator can be beneficial. The best way to see if this random paragraph picker will be useful for your intended purposes is to give it a try. Generate a number of paragraphs to see if they are beneficial to your current project.
+
+            If you do find this paragraph tool useful, please do us a favor and let us know how you're using it. It's greatly beneficial for us to know the different ways this tool is being used so we can improve it with updates. This is especially true since there are times when the generators we create get used in completely unanticipated ways from when we initially created them. If you have the time, please send us a quick note on what you'd like to see changed or added to make it better in the future.
+          </div>
+          <div className="carousel-container">
+            <button onClick={handlePrevSlide}>&lt;</button>
+            <img src={images[currentSlideIndex]} alt="slide" />
+            <p>{descriptions[currentSlideIndex]}</p>
+            <button onClick={handleNextSlide}>&gt;</button>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default AboutPageComponent;
+
+
+/**  <div className="aboutuspage">
             <div className="team">
               <h1>Our Team</h1>
             </div>
@@ -79,10 +109,4 @@ function AboutPageComponent(){
               </div>
           </div>
           </div>
-        </div>
-        </div>
-        </>
-    );
-}
-
-export default AboutPageComponent;
+        </div> */
