@@ -1,90 +1,174 @@
-import React from "react";
+import React, { useState } from "react";
 import denis from "./imagesOnAboutPage/denis (1).jpg";
 import daniel from "./imagesOnAboutPage/daniel.jpg";
 import john from "./imagesOnAboutPage/john.jpg";
 import adriana from "./imagesOnAboutPage/adriana.jpg";
-import Carousel from 'react-bootstrap/Carousel';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "./AboutPage.css";
 
-
-
-import "./AboutPage.css"
-
-
-function AboutPageComponent(){
-    return(
-        <>
-        <div className="aboutuscontainer">
-          <div className="whoarewe">
-            <div className="whoarewetitle">
-              <h1> Who Are we? </h1>
-            </div>
-            <div className="whoareweparagraph">
-              It's not only writers who can benefit from this free online tool. If you're a programmer who's working on a project where blocks of text are needed, this tool can be a great way to get that. It's a good way to test your programming and that the tool being created is working well.
-
-              Above are a few examples of how the random paragraph generator can be beneficial. The best way to see if this random paragraph picker will be useful for your intended purposes is to give it a try. Generate a number of paragraphs to see if they are beneficial to your current project.
-
-              If you do find this paragraph tool useful, please do us a favor and let us know how you're using it. It's greatly beneficial for us to know the different ways this tool is being used so we can improve it with updates. This is especially true since there are times when the generators we create get used in completely unanticipated ways from when we initially created them. If you have the time, please send us a quick note on what you'd like to see changed or added to make it better in the future.
-            </div>
-          </div>
-            <Carousel interval={4000}>
-
-      <Carousel.Item>
-        <div className="carouselSlideInfo">
-          <div className="carouselSLideImage">
-
-          <img src={denis} alt='daniel' width={600} height={600}/>
-          </div>
-          <div className="carouselSlideCaptions">
-            <h2>Hello world</h2>
-            <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-            </Carousel.Caption>
-
-          </div>
-
-        </div>
-
-      </Carousel.Item>
-      <Carousel.Item>
-      <img src={daniel} alt='daniel' width={600} height={600}/>
-
-
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-      <img src={john} alt='daniel' width={600} height={600}/>
-
-
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-      <img src={adriana} alt='daniel' width={600} height={600}/>
-
-
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
-    </Carousel>
-        </div>
-        </>
-    );
-  }
+function AboutPageComponent () {
+  const items = [
+    {
+      image: denis,
+      description: "Description for Image 1",
+    },
+    {
+      image: daniel,
+      description: "Description for Image 2",
+    },
+    {
+      image: john,
+      description: "Description for Image 3",
+    },
+    {
+      image: adriana,
+      description: "Description for Image 4",
+    },
+  ];
   
-  export default AboutPageComponent;
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const handlePrev = () => {
+    const index = currentIndex === 0 ? items.length - 1 : currentIndex - 1;
+    setCurrentIndex(index);
+  };
+
+  const handleNext = () => {
+    const index = currentIndex === items.length - 1 ? 0 : currentIndex + 1;
+    setCurrentIndex(index);
+  };
+
+  return (
+    <>
+    <div className="whoarewe">
+            <div className="whoarewetitle">
+            </div>
+              <h1> Who Are we? </h1>
+            <div className="whoareweparagraph">
+              It's not only writers who can benefit from this free online tool. If you're a programmer who's working on a project where blocks of text are needed, this tool can be a great way to get that. It's a good way to test your programming and that the tool being created is working well              Above are a few examples of how the random paragraph generator can be beneficial. The best way to see if this random paragraph picker will be useful for your intended purposes is to give it a try. Generate a number of paragraphs to see if they are beneficial to your current project              If you do find this paragraph tool useful, please do us a favor and let us know how you're using it. It's greatly beneficial for us to know the different ways this tool is being used so we can improve it with updates. This is especially true since there are times when the generators we create get used in completely unanticipated ways from when we initially created them. If you have the time, please send us a quick note on what you'd like to see changed or added to make it better in the future.
+            </div>
+          </div>
+    <div className="carousel">
+      <button className="carousel__prev" onClick={() => handlePrev()}>
+        &#8249;
+      </button>
+      <button className="carousel__next" onClick={() => handleNext()}>
+        &#8250;
+      </button>
+      <div className="carousel__container">
+        {items.map((item, index) => (
+          <div
+            className={`carousel__item ${
+              index === currentIndex ? "carousel__item--active" : ""
+            }`}
+            key={index}
+            style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+          >
+            <div className="carousel__image">
+              <img
+                src={item.image}
+                alt={item.description}
+                width="280"
+                height="280"
+              />
+            </div>
+            <p className="carousel__desc">{item.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+    </>
+  );
+};
+
+export default AboutPageComponent;
+
+// import React from "react";
+// import denis from "./imagesOnAboutPage/denis (1).jpg";
+// import daniel from "./imagesOnAboutPage/daniel.jpg";
+// import john from "./imagesOnAboutPage/john.jpg";
+// import adriana from "./imagesOnAboutPage/adriana.jpg";
+// import Carousel from 'react-bootstrap/Carousel';
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+
+// import "./AboutPage.css"
+
+
+// function AboutPageComponent(){
+//     return(
+//         <>
+//         <div className="aboutuscontainer">
+//           <div className="whoarewe">
+//             <div className="whoarewetitle">
+//               <h1> Who Are we? </h1>
+//             </div>
+//             <div className="whoareweparagraph">
+//               It's not only writers who can benefit from this free online tool. If you're a programmer who's working on a project where blocks of text are needed, this tool can be a great way to get that. It's a good way to test your programming and that the tool being created is working well.
+
+//               Above are a few examples of how the random paragraph generator can be beneficial. The best way to see if this random paragraph picker will be useful for your intended purposes is to give it a try. Generate a number of paragraphs to see if they are beneficial to your current project.
+
+//               If you do find this paragraph tool useful, please do us a favor and let us know how you're using it. It's greatly beneficial for us to know the different ways this tool is being used so we can improve it with updates. This is especially true since there are times when the generators we create get used in completely unanticipated ways from when we initially created them. If you have the time, please send us a quick note on what you'd like to see changed or added to make it better in the future.
+//             </div>
+//           </div>
+//             <Carousel interval={4000}>
+
+//       <Carousel.Item>
+//         <div className="carouselSlideInfo">
+//           <div className="carouselSLideImage">
+
+//           <img src={denis} alt='daniel' width={600} height={600}/>
+//           </div>
+//           <div className="carouselSlideCaptions">
+//             <h2>Hello world</h2>
+//             <Carousel.Caption>
+//               <h3>First slide label</h3>
+//               <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+//             </Carousel.Caption>
+
+//           </div>
+
+//         </div>
+
+//       </Carousel.Item>
+//       <Carousel.Item>
+//       <img src={daniel} alt='daniel' width={600} height={600}/>
+
+
+//         <Carousel.Caption>
+//           <h3>Second slide label</h3>
+//           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+//         </Carousel.Caption>
+//       </Carousel.Item>
+//       <Carousel.Item>
+//       <img src={john} alt='daniel' width={600} height={600}/>
+
+
+//         <Carousel.Caption>
+//           <h3>Third slide label</h3>
+//           <p>
+//             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+//           </p>
+//         </Carousel.Caption>
+//       </Carousel.Item>
+//       <Carousel.Item>
+//       <img src={adriana} alt='daniel' width={600} height={600}/>
+
+
+//         <Carousel.Caption>
+//           <h3>Third slide label</h3>
+//           <p>
+//             Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+//           </p>
+//         </Carousel.Caption>
+//       </Carousel.Item>
+//     </Carousel>
+//         </div>
+//         </>
+//     );
+//   }
+  
+//   export default AboutPageComponent;
   {/* <div className="aboutuspage">
     <div className="team">
       <h1>Our Team</h1>

@@ -26,7 +26,7 @@ function SpiceComponent(){
        <>
        <div className='CradcontainerSpice'>
             <div className='VoltaSpiceHeading'>
-                <h1> Volta Spice</h1>
+                <h1> Volta SPICE</h1>
             </div>
             { showVoltaSpiceDescription ?(
                     <div className={handleStyleForDescription()}>

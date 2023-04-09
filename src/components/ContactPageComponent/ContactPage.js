@@ -38,17 +38,23 @@ function ContactPageComponent(){
                 </div>
                 <div className="formContainer">
                     <h1 className="titleforcontact"> Get in touch</h1>
-                    <div className="nameInputContact">
-                        <input className="inputContactUs" type="text" required placeholder="Name"/>
+                    <div className="nameandemaildiv">
+                        <div className="nameInputContact">
+                            <input className="inputContactUs" type="text" required placeholder="Name"/>
+                        </div>
+                        <div classname="emailInputContactContainer">
+                                <input className="inputContactUs" type="text" required placeholder="Email"/>
+                        </div>
+
                     </div>
-                    <div className="emailandphone">
+                    {/* <div className="emailandphone">
                         <div classname="emailInputContact">
                             <input className="emailinputContactUs" type="text" required placeholder="Email"/>
-                        </div>
-                        <div className="phoneInput" >
+                        </div> */}
+                        {/* <div className="phoneInput" >
                             <input className="phoneinputContactUs" type="text" required placeholder="Phone Number"/>
-                        </div>
-                    </div>
+                        </div> */}
+                    {/* </div> */}
                     <div className="messageInput">
                         <textarea className="textareaContactUs" required placeholder="Message"></textarea>
                     </div>

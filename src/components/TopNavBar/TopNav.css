@@ -36,6 +36,24 @@
 	width: 200%;
 }
 
+@media only screen and (max-width: 768px) {
+	.logoTitle{
+	  font-size: 70%; /* adjust font size for smaller screens */
+	}
+  }
+
+  @media only screen and (max-width: 1510px) {
+	.logoTitle{
+	  font-size: 70%; /* adjust font size for smaller screens */
+	}
+  }
+  
+  @media only screen and (max-width: 480px) {
+	.logoTitle{
+	  font-size: 50%; /* adjust font size for even smaller screens */
+	}
+  }
+
 
 header {
 	display: flex;
