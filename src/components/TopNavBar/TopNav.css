@@ -36,14 +36,34 @@
 	width: 200%;
 }
 
+@media only screen and (max-width: 768px) {
+	.logoTitle{
+	  font-size: 70%; /* adjust font size for smaller screens */
+	}
+  }
+
+  @media only screen and (max-width: 1510px) {
+	.logoTitle{
+	  font-size: 70%; /* adjust font size for smaller screens */
+	}
+  }
+  
+  @media only screen and (max-width: 480px) {
+	.logoTitle{
+	  font-size: 50%; /* adjust font size for even smaller screens */
+	}
+  }
+
 
 header {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	height: max-content;
-	background-color: var(--mainColor);
-	color: var(--textColor);
+	/* background-color: var(--mainColor); */
+	background-color: #00172b;
+	/* color: var(--textColor); */
+	color: white;
 	width: 100vw;
 	position: fixed;
 	overflow: hidden;
@@ -55,7 +75,8 @@ header {
 }
 
 nav a {
-	color: var(--textColor);
+	/* color: var(--textColor); */
+	color: white;
 	text-decoration: none;
 	width: 120px;
 	padding-top: 5%;
@@ -78,7 +99,8 @@ header .nav-btn {
 	background: transparent;
 	border: none;
 	outline: none;
-	color: var(--textColor);
+	/* color: var(--textColor); */
+	color: white;
 	visibility: hidden;
 	opacity: 0;
 	font-size: 1.8rem;
@@ -112,7 +134,8 @@ header nav{
 		align-items: center;
 		justify-content: center;
 		gap: 1.5rem;
-		background-color: var(--mainColor);
+		/* background-color: var(--mainColor); */
+		background-color: #00172b;
 		transition: 1s;
 		opacity: 1;
 		transform: translateY(-100vh);

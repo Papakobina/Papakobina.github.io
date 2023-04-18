@@ -1,6 +1,9 @@
 .Cradcontainer{
   overflow: hidden;
   background-color: black;
+  background-image: url('./backdropebaord.jpg');
+  background-size: 100vw 100vh;
+  background-attachment: fixed;
   color: white;
   display: flex;
   width: 100vw;
@@ -16,7 +19,7 @@
 }
 
 .descripofvoltainsiteFadeIn{
-  font-size: 150%;
+  font-size: 200%;
   width: 90%;
   animation: fadeIn 2s ease-in;
 }

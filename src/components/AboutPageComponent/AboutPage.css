@@ -1,140 +1,114 @@
-.whoarewe{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 5%;
-  /* background-color: rgb(53, 117, 53); */
-  background-color:  rgb(86, 144, 211);
-  color: white;
-
+.aboutPagewholecontainer{
+  margin-top: 5%;
 }
 
-.aboutuscontainer{
-  padding-top: 6%;
-}
-.whoareweparagraph{
-  padding-top: 2%;
-  font-size: 150%;
-}
-.team{
-  text-align: center;
-}
-.aboutuspage {
-    display: flex;
-    flex-direction: column;
-    padding-top: 5%;
-    background-color: white;
-  }
-
-.carouselSlideInfo{
-  width: 100vw;
+.introwhoweare {
   display: flex;
   flex-direction: row;
-  color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7%;
+}
+.imageonAboutUsPage{
+  background-image: url("./imagesOnAboutPage/team.jpg");
+  background-size: 100vw 100vh;
+  width: 100vw;
+  height: 30vh;
+  font-size: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("./imagesOnAboutPage/team.jpg");
+  align-items: center;
+  text-align: center;
+  display: flex;
 }
 
-.carouselSlideCaptions{
-  text-align: end;
+.textonAboutusImage{
+  font-weight: bolder;
+  color: white;
+  max-width: fit-content;
+  margin: auto;
 }
-  
-  /* .firstrow {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-top: 5%;
-  }
-  
-  .secondrow {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10%;
-    padding-bottom: 10%;
-  }
-  
-  .firstImagecontainer,
-  .SecondImagecontainer,
-  .thirdImagecontainer,
-  .fourthImagecontainer {
+
+@media screen and (max-width: 1200px) {
+  .introwhoweare {
+    padding-top: 20vh;
+    padding-bottom: 10vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 20%;
-    height: 600px;
-    border-radius: 10px;
-    margin: 0 20px;
-    background: linear-gradient(white, white) padding-box,
-    linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB) border-box;
-    border: 4px solid transparent;
-    color:  rgb(31, 31, 97);
-    
-    
-
-  }
-
-  .firstImagecontainer{
-    margin-right: 7%;
-  }
-
-  .thirdImagecontainer{
-    margin-right: 7%;
   }
   
-  .firstimage,
-  .secondimage,
-  .thirdimage,
-  .fourthimage {
-    cursor: pointer;
+  .introwhoweareLeft {
+    width: 75%;
+    max-width: 800px;
+    margin-bottom: 2rem;
   }
   
-  .card {
-    padding: 20px;
-    text-align: left;
+  .introwhoweareRight {
+    width: 75%;
+    max-width: 800px;
+    margin-top: 2rem;
   }
   
-  .image-container {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .image-overlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    transition: opacity 0.5s;
-  }
-  
-  .image-container:hover .image-overlay {
-    opacity: 1;
-  }
-  
-  .image-button {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    color: black;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    cursor: pointer;
+}
 
+
+.ourPeople{
+  text-align: center;
+}
+
+.introwhoweareLeft {
+  flex: 0 0 50%;
+  max-width: 50%;
+  margin-left: 5vw;
+  align-self: flex-start;
+  text-align: left;
+}
+
+.introwhoweareRight {
+  flex: 1;
+  margin-right: 20%;
+}
+
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card-column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .card-column {
+    margin-right: 0;
   }
+}
 
-  .image-button:hover{
-    border-radius: 10px;
-    background: linear-gradient(white, white) padding-box,
-    linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB) border-box;
-    border: 4px solid transparent;
-    color:  rgb(31, 31, 97);
-
-  } */
+@media screen and (max-width: 1200px) {
+  .introwhoweare {
+    padding-top: 20vh;
+    padding-bottom: 10vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .introwhoweareLeft {
+    width: 75%;
+    max-width: 800px;
+    margin-bottom: 2rem;
+  }
+  
+  .introwhoweareRight {
+    width: 75%;
+    max-width: 800px;
+    margin-top: 2rem;
+  }
+  
+}

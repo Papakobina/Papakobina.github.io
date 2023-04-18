@@ -1,99 +1,68 @@
-import { isVisible } from "@testing-library/user-event/dist/utils";
-import React, { useState } from "react";
-import CountUp from "react-countup";
+import React, { useState, useEffect, useRef } from 'react';
+import CountUp from 'react-countup';
 import "./StatsComponent.css"
-import ReactVisibilitySensor from "react-visibility-sensor";
 
-function StatsComponent({ className, ...rest }) {
-  const [viewPortEntered, setViewPortEntered] = useState(false);
+const CountUpNumbers = () => {
+  const [counters, setCounters] = useState([
+    { label: 'Employee Count', value: 0, max: 50 },
+    { label: 'Revenue', value: 0, max: 75 },
+    { label: 'Profit', value: 0, max: 80 },
+    { label: 'Customers', value: 0, max: 100 },
+  ]);
+
+  const countersRef = useRef(null);
+
+  useEffect(() => {
+    const options = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.5,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const intervals = counters.map(({ max }, index) => {
+            return setInterval(() => {
+              setCounters(counters => {
+                const newCounters = [...counters];
+                if (newCounters[index].value < max) {
+                  newCounters[index].value += 1;
+                }
+                return newCounters;
+              });
+            }, 100);
+          });
+
+          setTimeout(() => {
+            observer.unobserve(entry.target);
+
+            intervals.forEach(clearInterval);
+          }, 3000);
+
+        }
+      });
+    }, options);
+
+    if (countersRef.current) {
+      observer.observe(countersRef.current);
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [counters]);
 
   return (
-    <>
-      <div className="counter">
-        <div className="Year founded">
-            <CountUp {...rest} start={viewPortEntered ? null : 0} end={2009}>
-                    {({ countUpRef }) => {
-                    return (
-                        <ReactVisibilitySensor
-                        active={!viewPortEntered}
-                        onChange={(isVisible) => {
-                            if (isVisible) {
-                            setViewPortEntered(true);
-                            }
-                        }}
-                        delayedCall
-                        >
-                    <span className="number" ref={countUpRef} />
-                    </ReactVisibilitySensor>
-                    );
-                    }}
-            </CountUp>
-            <h2>Year founded</h2>
+    <div ref={countersRef} style={{ display: 'flex', justifyContent: 'space-between' }} className='counterforstats'>
+      {counters.map(({ label, value }, index) => (
+        <div key={index}>
+          <CountUp start={0} end={value} duration={3} repeat={true}/>
+          <p>{label}</p>
         </div>
-        <div className="Team members">
-            <CountUp {...rest} start={viewPortEntered ? null : 0} end={18}>
-                    {({ countUpRef }) => {
-                    return (
-                        <ReactVisibilitySensor
-                        active={!viewPortEntered}
-                        onChange={(isVisible) => {
-                            if (isVisible) {
-                            setViewPortEntered(true);
-                            }
-                        }}
-                        delayedCall
-                        >
-                    <span className="number" ref={countUpRef} />
-                    </ReactVisibilitySensor>
-                    );
-                    }}
-            </CountUp>
-            <h2>Team members</h2>
-        </div>
-        <div className="Countries Involved">
-            <CountUp {...rest} start={viewPortEntered ? null : 0} end={5}>
-                    {({ countUpRef }) => {
-                    return (
-                        <ReactVisibilitySensor
-                        active={!viewPortEntered}
-                        onChange={(isVisible) => {
-                            if (isVisible) {
-                            setViewPortEntered(true);
-                            }
-                        }}
-                        delayedCall
-                        >
-                    <span className="number" ref={countUpRef} />
-                    </ReactVisibilitySensor>
-                    );
-                    }}
-            </CountUp>
-            <h2>Countries Involved</h2>
-        </div>
-        <div className="Number of subsidiaries">
-            <CountUp {...rest} start={viewPortEntered ? null : 0} end={3}>
-                    {({ countUpRef }) => {
-                    return (
-                        <ReactVisibilitySensor
-                        active={!viewPortEntered}
-                        onChange={(isVisible) => {
-                            if (isVisible) {
-                            setViewPortEntered(true);
-                            }
-                        }}
-                        delayedCall
-                        >
-                    <span className="number" ref={countUpRef} />
-                    </ReactVisibilitySensor>
-                    );
-                    }}
-            </CountUp>
-            <h2>Number of subsidiaries</h2>
-        </div>
-      </div>
-    </>
+      ))}
+    </div>
   );
-}
+};
 
-export default StatsComponent;
-
+export default CountUpNumbers;
