@@ -12,7 +12,7 @@ function HomeApp() {
       <FirstBodyComponent />
       <SecondBodyComponent />
       <CountUpNumbers />
-      <PartnerSectionComponent />
+      {/* <PartnerSectionComponent /> */}
       <ThirdBodyComponent />
       <SpiceComponent />
     </div>

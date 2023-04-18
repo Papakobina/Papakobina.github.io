@@ -2,6 +2,7 @@
   display: flex;
   flex-direction: row;
   margin-top: 15%;
+  padding-bottom: 5%;
 }
 .formContainer{
   display: flex;
@@ -124,68 +125,25 @@
   display: flex;
   width: 65%;
   flex-direction: row;
-  justify-content: end;
-  /* background-color: #5B42F3;  */
+  justify-content: space-between;
   margin-bottom: 3%;
 }
 .nameInputContact{
-  margin-right: 50%;
-  width: 100%;
+  width: 50%;
+  align-self: flex-start;
+}
+
+.nameInputContact {
+  margin-right: 10px;
 }
 
 
-.emailinputContactUs{
-  padding: 30px;
-  border: 0;
-  width: 100%;
-  font-size: 1rem;
-  background-color: #2d2d2d;
-  color: white;
-  border-radius: 4px;
-}
+
 
 .emailInputContactContainer{
-  width: 150%;
+  width: 50%;
+  align-self: flex-end;
 }
-/* .nameInputContact{
-  width: 65%;
-  margin: 1rem 0;
-  border-radius: 4px;
-}
-
-.emailinputContactUs{
-  padding: 17%;
-  border: 0;
-  width: 100%;
-  font-size: 1rem;
-  background-color: #2d2d2d;
-  color: white;
-  border-radius: 4px;
-}
-
-.phoneinputContactUs{
-  padding: 17%;
-  border: 0;
-  width: 100%;
-  align-self: end;
-  font-size: 1rem;
-  background-color: #2d2d2d;
-  color: white;
-  border-radius: 4px;
-
-} */
-
-
-/* 
-.emailandphone{
-  display: flex;
-  width: 65%;
-  flex-direction: row; */
-  /* align-items: center; */
-  /* margin-bottom: 2%;
-} */
-
-
 .messageInput{
   width: 65%;
 }
@@ -358,31 +316,10 @@
   background: none;
 }
 
-@media (min-width: 768px) {
-  .sendButtonContact {
-    font-size: 24px;
-    min-width: 196px;
-  }
-}
 
-
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
   .contactcontainer{
     flex-direction: column;
     margin-top: 5%;
   }
-}
-
-@media (max-width:1000px ) {
-  .emailandphone{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 2%;
-  }
-  .phoneinputContactUs{
-    margin-top: 5%;
-  }
-  
-  
 }

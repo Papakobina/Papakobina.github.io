@@ -4,6 +4,7 @@
     align-items: center;
     /* background-color: white; */
     background-color: #222;
+      
     padding: 3% 5%; /* Use padding shorthand to add equal padding on top and bottom and add left and right padding */
   }
   
@@ -41,7 +42,7 @@
   
   .subscribeContainer {
     background-color: white;
-    color: blue;
+    color: #222;
     width: 30%;
     min-width: 300px;
     max-width: 400px;
