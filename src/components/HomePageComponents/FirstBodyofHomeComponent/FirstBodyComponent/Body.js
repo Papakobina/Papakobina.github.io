@@ -2,18 +2,16 @@ import React from "react";
 import './Body.css';
 import Typewriter from 'typewriter-effect';
 
-import MainImage from './VoltaColoured.png'
-
 function FirstBodyComponent(){
     return(
         <>
-        <div className="container">
-            <div className="headerholder">
-                <div className="Textheader">
-                    <h1 className="headertitle">Volta Energy </h1>
+        <div className="containerFirstBodyComponent">
+            <div className="headerholderFirstBodyComponent">
+                <div className="TextheaderFirstBodyComponent">
+                    <h1 className="headertitleFirstBodyComponent">VOLTA ENERGY </h1>
                    
                 </div>
-                <div className="Subheading">
+                <div className="SubheadingFirstBodyComponent">
                 <Typewriter
                     options={{
                     strings: ['Changing the Way You Think About Electricity!', 'Leading the way In Predictive maintenance!'],
@@ -22,10 +20,6 @@ function FirstBodyComponent(){
                     }}
                     />
                 </div>
-
-            </div>
-            <div className="MainPageImage">
-                <img src={MainImage} alt='images'/>
 
             </div>
         </div>

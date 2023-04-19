@@ -1,89 +1,88 @@
-.footerContainer{
-    padding-top: 2%;
-    /* padding-bottom: 2%; */
+.footer {
     display: flex;
-    flex-direction: row;
-    width: 100vw;
-    height: 25vh;
-    background-color: white;
-}
-.headerwithdetails{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding-right: 25%;
-    padding-left: 5%;
-
-}
-.Contacts{
-    padding-right: 25%;
-
-}
-.footer{
-    display: flex;
-    width: 100vw;
-    height: 50vh;
-    background-color: white;
     flex-direction: column;
     align-items: center;
-    padding-top: 3%;
-}
-
-
-.subscribeContainer{
-    background-color: black;
+    /* background-color: white; */
+    background-color: #222;
+      
+    padding: 3% 5%; /* Use padding shorthand to add equal padding on top and bottom and add left and right padding */
+  }
+  
+  .footerContainer {
+    display: flex;
     color: white;
-    width: 30vw;
-    height: 20vh;
-    padding-top: 2%;
-    padding-left: 5%;
-    padding-bottom: 5%;
+    flex-direction: column;
+    justify-content: space-between; /* Use justify-content to add space between the elements */
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Add max-width to limit the width of the container on large screens */
+    padding: 2% 0; /* Use padding shorthand to add equal padding on top and bottom */
+  }
+  
+  .headerwithdetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 5%; /* Use padding shorthand to add equal padding on left and right */
+  }
+  
+  .Contacts {
+    text-align: center; /* Center the text */
+    padding: 2% 5%; /* Use padding shorthand to add equal padding on top and bottom and add left and right padding */
+  }
+  
+  .Socials {
+    display: flex;
+    justify-content: space-between; /* Use justify-content to add space between the elements */
+    align-items: center;
+    width: 100%;
+    max-width: 400px; /* Add max-width to limit the width of the container on large screens */
+    padding: 2% 5%; /* Use padding shorthand to add equal padding on top and bottom and add left and right padding */
+  }
+  
+  .subscribeContainer {
+    background-color: white;
+    color: #222;
+    width: 30%;
+    min-width: 300px;
+    max-width: 400px;
+    height: auto;
+    padding: 2% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
     border-radius: 1rem;
-    box-shadow: 1px 1px 2rem rgba(0,0,0,.3);
-    padding-bottom: 8%;
-}
- 
-.btn {
-	display: inline-block;
-	background: transparent;
-    color: white;
-	border: 0;
-	outline: 0;
+    box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  .inputforsubcription {
+    width: 100%; /* Add width to make the input field dynamic */
     font-size: larger;
-	padding: 0;
-	transition: all 200ms ease-in;
-	cursor: pointer;
+    padding: 2% 5%; /* Use padding shorthand to add equal padding on top and bottom and add left and right padding */
+    box-sizing: border-box; /* Add box-sizing to include padding in the width */
+  }
+  
+  .btn {
+    display: inline-block;
+    background: transparent;
+    color: white;
+    border: 0;
+    outline: 0;
+    font-size: larger;
+    padding: 0;
+    transition: all 200ms ease-in;
+    cursor: pointer;
     margin-top: 2%;
     background-color: rgb(54, 34, 145);
-	
-	box-shadow: 0 0 10px 2px rgba(0, 0, 0, .1);
-	border-radius: 2px;
-    /* font-size: large; */
-    padding-top: 3%;
-    padding-bottom: 3%;
-    padding-left: 8%;
-    padding-right: 8%;
-		
-}
-.btn:hover{
-    background: darken(fff, 4%);
-}
-
-.btn:active{
-    box-shadow: inset 0 0 10px 2px rgba(0, 0, 0, .2);
-}
-
-.form{
-    margin-bottom: 30%;
-}
-
-.inputforsubcription{   
-    padding-left: 10%;
-    font-size: larger;
-    padding-right: 10%;
-    padding-top: 2.8%;
-    padding-bottom: 2.8%;
-
-
-}
+    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+    padding: 3% 8%; /* Use padding shorthand to add equal padding on top and bottom and add left and right padding */
+  }
+  
+  @media only screen and (min-width: 768px) {
+    .footerContainer {
+      flex-direction: row; /* Change the direction to horizontal on medium and large screens */
+      height: auto;
+    }  }
