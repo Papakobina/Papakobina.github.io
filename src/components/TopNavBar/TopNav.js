@@ -1,6 +1,6 @@
 import React from "react";
 import { useRef } from "react";
-import logo from './Logo.png';
+import logo from './Logo.jpg';
 import { FaBars, FaTimes } from "react-icons/fa";
 import './TopNav.css'
 
@@ -17,18 +17,18 @@ function TopNavBarComponent(){
 		<header>
             <div className="Logo">
 				<div className="logoimage">
-                <img src={logo} alt='logo'  height='45' width='100'/>
+                <img src={logo} alt='logo'  height='100' width='100'/>
 				</div>
 				<div className="logoTitle">
-                	<h1>Volta Energy</h1>
+                	<h1>Zec Supplies Inc</h1>
 				</div>
             </div>
             <div className="links">
 			<nav ref={navRef}>
 				<a href="/#" className="home">Home</a>
-				<a href="/blog" className="Blog">Blog</a>
+				<a href="/blog" className="Blog">Products</a>
 				<a href="/contact" className="Contact">Contact</a>
-				<a href="/about" className="About">About</a>
+				{/* <a href="/about" className="About">About</a> */}
 				<button
 					className="nav-btn nav-close-btn"
 					onClick={showNavbar}>

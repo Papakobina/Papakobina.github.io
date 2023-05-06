@@ -11,10 +11,10 @@ function HomeApp() {
     <div className="HomeApp">
       <FirstBodyComponent />
       <SecondBodyComponent />
-      <CountUpNumbers />
+      {/* <CountUpNumbers /> */}
       {/* <PartnerSectionComponent /> */}
-      <ThirdBodyComponent />
-      <SpiceComponent />
+      {/* <ThirdBodyComponent />
+      <SpiceComponent /> */}
     </div>
   );
 }

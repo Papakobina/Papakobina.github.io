@@ -1,173 +1,106 @@
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-    /* overflow: hidden; */
-
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.containerFirstBodyComponent{
-    display: inline-flex; 
-    flex-direction: row; 
-    /* background-color: rgb(212, 212, 212); */
-    background-image: url('./computer-ethernet-wires.jpg');
-    background-attachment: fixed;
-    width: 100vw;
-    height: 100vh;
-    background-size: 100vw 100vh;
-    align-items: center;
-    overflow: hidden;
-
+.containerFirstBodyComponent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('./milling.jpg');
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100vh;
 }
 
-.headertitleFirstBodyComponent{
-    color: white;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+.headertitleFirstBodyComponent {
+  color: brown;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+  text-decoration: underline;
 }
 
-
-
-
-/* .dynamiclist li::after{
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    background-color: #00746e;
-    border-left: 2px solid #023058;
-    animation: typing 5s steps(44) infinite;
-}
-.dynamiclist li{
-    list-style: none;
-    color: #023058;
-    position: relative;
-} */
-
-.TextheaderFirstBodyComponent{
-    text-align: center;
-    font-size: 300%;
-    margin-top: -5%;
-    animation: slideInLeft 2s 1;
-}
-.SubheadingFirstBodyComponent{
-    text-align: center;
-    font-size: 200%;
-    color: white;
-    animation: slideInLeft 4s 1;
-}
-.headerholderFirstBodyComponent{
-    width: 100%;
-    padding-top: 0;
-    align-items: center;
+.TextheaderFirstBodyComponent {
+  text-align: center;
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  animation: slideInLeft 2s 1;
 }
 
-/* .button{
-    background-color: black;
-    color: white;
-    font-size: large;
-    border-radius: 41%;
-    padding-right: 5em;
-    padding-left: 5em;
-    padding-top: 2em;
-    padding-bottom: 2em;
-    font-weight: 900;
-    cursor: pointer;
-} */
-@keyframes slideInLeft {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-      transform: translateX(0);
-    }
+.SubheadingFirstBodyComponent {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  animation: slideInLeft 4s 1;
+}
+
+.buttonFirstBodyComponent {
+  background-color: brown;
+  color: white;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+
+@media only screen and (max-width: 768px) {
+  .TextheaderFirstBodyComponent {
+    font-size: 3rem;
   }
-@keyframes typing{
-    40%,60%{
-        left: calc(30% + 1px);
-    }
-    100%{
-        left: 0;
-    }
+
+  .SubheadingFirstBodyComponent {
+    font-size: 1.5rem;
+  }
+
+  .buttonFirstBodyComponent {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
 }
 
+@media only screen and (max-width: 480px) {
+  .TextheaderFirstBodyComponent {
+    font-size: 2rem;
+  }
 
-@keyframes dance {
-    0%{
-        transform: translateY(0px);
-    }
-    50%{
-        transform: translateY(-5px);
-    }
-    100%{
-        transform: translateY(0px);
-    }
+  .SubheadingFirstBodyComponent {
+    font-size: 1rem;
+  }
+
+  .buttonFirstBodyComponent {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.5rem;
+  }
 }
 
-    @media only screen and (max-width: 768px) {
-        .TextheaderFirstBodyComponent h1  {
-          font-size: 3rem; /* adjust font size for smaller screens */
-        }
-      }
-      
-      @media only screen and (max-width: 480px) {
-        .TextheaderFirstBodyComponent h1{
-          font-size: 2rem; /* adjust font size for even smaller screens */
-        }
-      }
+.bulletPoints {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #222;
+  padding-left: 3%;
+  margin-left: 5%;
+  font-size: 2.5rem;
+  margin-bottom: 7%;
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.2);
+}
 
-      @media only screen and (max-width: 768px) {
-        .SubheadingFirstBodyComponent {
-          font-size: 1.2rem; /* adjust font size for smaller screens */
-        }
-      }
+@media only screen and (max-width: 768px) {
+  .bulletPoints {
+    font-size: 2.5rem;
+  }
+  .headertitleFirstBodyComponent{
+    font-size: 3rem;
+  }
+}
 
-      @media only screen and (max-width: 480px) {
-        .SubheadingFirstBodyComponent {
-          font-size: 1rem; /* adjust font size for even smaller screens */
-        }
-      }
-
-      /* .container{
-        display: inline-flex;
-        flex-direction: row; */
-        /* background-color: rgb(212, 212, 212); */
-        /* background-image: url('./computer-ethernet-wires.jpg');
-        background-attachment: fixed;
-        width: 100vw;
-        height: 90vh;
-        background-size: 100vw 100vh; */
-        /* background-color: rgba(0, 0, 0, 1); Change the opacity as needed */
-        /* align-items: center;
-        overflow: hidden;
-    } */
-    
-    /* .MainPageImage {
-        position: relative;
-    }
-    
-    .MainPageImage:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        background-image: url('./computer-ethernet-wires.jpg');
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        z-index: -1;
-        transform: translateZ(-1px) scale(2);
-    }
-    
-    .MainPageImage .content {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: 1;
-        color: #fff;
-    }
-     */
+@media only screen and (max-width: 480px) {
+  .bulletPoints {
+    font-size: 2rem;
+    padding-left: 2%;
+    margin-left: 3%;
+    margin-bottom: 3%;
+  }
+}

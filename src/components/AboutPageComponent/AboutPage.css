@@ -52,6 +52,19 @@
   
 }
 
+.buttononAboutUsPageCeo {
+  display: none;
+}
+
+.imageonAboutUsPage:hover + .buttononAboutUsPageCeo, .buttononAboutUsPageCeo:hover {
+  display: block;
+  background-color: rgba(0,0,0,0.3);
+}
+
+.imageonAboutUsPage:hover{
+  background-color: rgba(0,0,0,0.3);
+
+}
 
 .ourPeople{
   text-align: center;

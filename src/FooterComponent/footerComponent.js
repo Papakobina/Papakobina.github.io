@@ -11,7 +11,7 @@ function FooterCompoenet(){
     return(
         <>
         <div className="footer">
-            <div className="subscribeContainer">
+            {/* <div className="subscribeContainer">
                 <form action="#" class="card-content">
                     <div className="containerSubscribe">
                     <h1>Subscribe</h1>
@@ -22,33 +22,30 @@ function FooterCompoenet(){
                             <input type="email" className="inputforsubcription" placeholder="Your E-Mail Address" />
                             <button type="button" className="btn">Send</button>
                         </form>
-                        {/* <input className="emailinputforSubscription" type="email" placeholder="Enter Email"/>
-                        <button className="subscribe-btn">Subscribe</button> */}
+                        <input className="emailinputforSubscription" type="email" placeholder="Enter Email"/>
+                        <button className="subscribe-btn">Subscribe</button>
                     </div>
                 </form>
 
-            </div>
+            </div> */}
             <div className="footerContainer">
                 <div className="headerwithdetails">
-                    <div className="logoimagefooter">
+                    {/* <div className="logoimagefooter">
                         <img src={logo} alt='logo'  height='45' width='100'/>
-                    </div>
+                    </div> */}
                     <div className="logoTitlefooter">
-                        <h1>Volta Energy</h1>
+                        <h1>Zec-Supplies</h1>
                     </div>
                 </div>
                 <div className="Contacts">
                     <h2>Contacts</h2>
-                    <h3><a href="nquiry@voltaenergy.ca" target='_blank'>enquiry@voltaenergy.ca</a></h3>
-                    <h3>(416)-282-8658</h3>
-                    <h3> 87 Thornmount Drive, Unit 16 Toronto,<br></br> Ontario M1B 5S5 </h3>
+                    <h3><a href="nquiry@voltaenergy.ca" target='_blank'>customercare@zec-supplies.com</a></h3>
+                    <h3>(587) -834-3499</h3>
+                    <h3>7 Citadel Meadow Crescent NW,<br></br>Calgary, Alberta
+T3G 4Z1   Canada
+ </h3>
                 </div>
-                <div className="Socials">
-                    <h2>Socials</h2>
-                    <a href="https://www.linkedin.com/company/volta-energy/mycompany/" target="_blank"><img src={linkedin} alt='linkedin' height='45' width='45'/></a>
-                    <a href="https://www.instagram.com/voltanrg/?hl=en" target='_blank'><img src={instagram} alt='Instagram'/></a>
-                    <a href="https://www.tiktok.com/@voltanrg" target='_blank'><img src={tiktok} alt='tiktok'/></a>
-                </div>
+               
 
             </div>
 

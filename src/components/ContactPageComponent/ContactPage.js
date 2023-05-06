@@ -50,9 +50,11 @@ function ContactPageComponent(){
             <a href="https://www.tiktok.com/@voltanrg" target='_blank'><img src={tiktok} alt='tiktok'/></a>
           </div>
           <div>
-            <h3><a href="papakobina2004@gmail.com" target='_blank'>enquiry@voltaenergy.ca</a></h3>
-            <h3>(416)-282-8658</h3>
-            <h3> 87 Thornmount Drive, Unit 16 Toronto,<br></br> Ontario M1B 5S5 </h3>
+            <h3><a href="papakobina2004@gmail.com" target='_blank'>customercare@zec-supplies.com</a></h3>
+            <h3>(587) -834-3499</h3>
+            <h3> 7 Citadel Meadow Crescent NW,<br></br>Calgary, Alberta
+T3G 4Z1
+ </h3>
           </div>
         </div>
         <div className="formContainer">
