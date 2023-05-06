@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.54ab60b9.css",
+    "main.js": "/static/js/main.1f0ad59a.js",
+    "static/js/787.0e5e202f.chunk.js": "/static/js/787.0e5e202f.chunk.js",
+    "static/media/milling.jpg": "/static/media/milling.26de2b308b642269fd22.jpg",
+    "static/media/lubricants.jpg": "/static/media/lubricants.10af5ea8b0c7d88060e1.jpg",
+    "static/media/blasthole.jpg": "/static/media/blasthole.94726270156fbc0fb3ef.jpg",
+    "static/media/oil.jpg": "/static/media/oil.871272812a997d772db3.jpg",
+    "static/media/gas.jpg": "/static/media/gas.b2205712aaddee7034bb.jpg",
+    "static/media/refinery.jpg": "/static/media/refinery.9892ebb5ba8ccce60522.jpg",
+    "static/media/backdropbluepints.jpg": "/static/media/backdropbluepints.0446167ef0705c781239.jpg",
+    "static/media/backdropebaord.jpg": "/static/media/backdropebaord.368e489faf65ad1b0029.jpg",
+    "static/media/wirelinecore.png": "/static/media/wirelinecore.6c57faa8790e7594efd6.png",
+    "static/media/rods.jpg": "/static/media/rods.073e1337bfa55531d0c6.jpg",
+    "static/media/Logo.jpg": "/static/media/Logo.6358f5a30513b73d96c9.jpg",
+    "static/media/drill.jpg": "/static/media/drill.01aac1a9500c56872692.jpg",
+    "static/media/Logo.png": "/static/media/Logo.2eef2f9f1126dda0ee0b.png",
+    "index.html": "/index.html",
+    "main.54ab60b9.css.map": "/static/css/main.54ab60b9.css.map",
+    "main.1f0ad59a.js.map": "/static/js/main.1f0ad59a.js.map",
+    "787.0e5e202f.chunk.js.map": "/static/js/787.0e5e202f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.54ab60b9.css",
+    "static/js/main.1f0ad59a.js"
+  ]
+}
